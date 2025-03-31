@@ -1,4 +1,4 @@
-package com.example.holamundo
+package com.example.actividades_tareas.parcial_1
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -76,14 +76,14 @@ fun cambioColoresNeto (neto: Int): Color {
         mutableStateOf(Color.White)
     }
 
-   if (neto == 0) {
-       colorLetra = Color.White
+    if (neto == 0) {
+        colorLetra = Color.White
     }
-   if (neto < 0) {
-       colorLetra = Color.Red
-   }
-   if (neto > 0) {
-       colorLetra = Color.Black
+    if (neto < 0) {
+        colorLetra = Color.Red
+    }
+    if (neto > 0) {
+        colorLetra = Color.Black
     }
     return colorLetra
 }

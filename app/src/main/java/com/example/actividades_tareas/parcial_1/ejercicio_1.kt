@@ -1,4 +1,4 @@
-package com.example.holamundo
+package com.example.actividades_tareas.parcial_1
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

@@ -1,4 +1,4 @@
-package com.example.actividades_tareas
+package com.example.actividades_tareas.parcial_1
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -29,6 +29,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.actividades_tareas.R
 
 @Preview (showBackground = true)
 @Composable

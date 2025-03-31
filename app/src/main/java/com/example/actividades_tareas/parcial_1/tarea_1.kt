@@ -1,4 +1,4 @@
-package com.example.holamundo
+package com.example.actividades_tareas.parcial_1
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
