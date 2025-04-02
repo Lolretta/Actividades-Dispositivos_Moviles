@@ -4,6 +4,8 @@ import androidx.annotation.DrawableRes
 
 data class VideojuegoModel(
 
+    val id_cat: Int,
+
     @DrawableRes val image: Int,
     val precio: Float,
     val nombre: String,
@@ -13,6 +15,8 @@ data class VideojuegoModel(
 )
 
 data class AudioModel(
+
+    val id_cat: Int,
 
     @DrawableRes val image: Int,
     val precio: Float,
@@ -24,6 +28,8 @@ data class AudioModel(
 
 data class InstrumentosModel(
 
+    val id_cat: Int,
+
     @DrawableRes val image: Int,
     val precio: Float,
     val nombre: String,
@@ -34,6 +40,8 @@ data class InstrumentosModel(
 
 data class TelefoniaModel(
 
+    val id_cat: Int,
+
     @DrawableRes val image: Int,
     val precio: Float,
     val nombre: String,
@@ -43,6 +51,8 @@ data class TelefoniaModel(
 )
 
 data class ComputacionModel(
+
+    val id_cat: Int,
 
     @DrawableRes val image: Int,
     val precio: Float,

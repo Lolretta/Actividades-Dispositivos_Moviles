@@ -24,11 +24,13 @@ import com.example.actividades_tareas.parcial_2.Ejercicio_6.Models.CategoriaMode
 @Composable
 fun CategoriaView(categoria: CategoriaModel, navegar: NavController) {
 
+    val id = categoria.id_cat
+
     Card(
         modifier = Modifier
             .padding(8.dp)
             .clickable {
-                navegar.navigate("productos?nombre=${categoria.nombre}")
+                navegar.navigate("productos?id=$id")
             },
         elevation = CardDefaults.cardElevation(4.dp),
 
@@ -42,7 +44,6 @@ fun CategoriaView(categoria: CategoriaModel, navegar: NavController) {
                     .fillMaxWidth()
                     .padding(start = 10.dp, top = 5.dp, bottom = 5.dp)
             )
-
             Image(
                 painter = painterResource(id = categoria.image),
                 contentDescription = null,

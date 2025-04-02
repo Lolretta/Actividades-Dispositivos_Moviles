@@ -13,6 +13,7 @@ class ProductoViewModel(): ViewModel() {
     fun obtenerVideojuegos(): List<VideojuegoModel> {
 
         val prod_1 = VideojuegoModel(
+            id_cat = 1,
             nombre = "PlayStation 5",
             envio = true,
             descuento = 0.05f,
@@ -20,6 +21,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_2 = VideojuegoModel(
+            id_cat = 1,
             nombre = "PlayStation 5",
             envio = true,
             descuento = null,
@@ -27,6 +29,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_3 = VideojuegoModel(
+            id_cat = 1,
             nombre = "PlayStation 5",
             envio = true,
             descuento = 0.50f,
@@ -34,6 +37,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_4 = VideojuegoModel(
+            id_cat = 1,
             nombre = "PlayStation 5",
             envio = true,
             descuento = null,
@@ -41,6 +45,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_5 = VideojuegoModel(
+            id_cat = 1,
             nombre = "PlayStation 5",
             envio = true,
             descuento = 15.0f,
@@ -59,6 +64,7 @@ class ProductoViewModel(): ViewModel() {
     fun obtenerAudio(): List<AudioModel> {
 
         val prod_1 = AudioModel(
+            id_cat = 2,
             nombre = "Beats Studio",
             envio = true,
             descuento = 0.05f,
@@ -66,6 +72,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_2 = AudioModel(
+            id_cat = 2,
             nombre = "Beats Studio",
             envio = true,
             descuento = null,
@@ -73,6 +80,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_3 = AudioModel(
+            id_cat = 2,
             nombre = "Beats Studio",
             envio = true,
             descuento = 0.50f,
@@ -80,6 +88,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_4 = AudioModel(
+            id_cat = 2,
             nombre = "Beats Studio",
             envio = true,
             descuento = null,
@@ -87,6 +96,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_5 = AudioModel(
+            id_cat = 2,
             nombre = "Beats Studio",
             envio = true,
             descuento = 15.0f,
@@ -105,6 +115,7 @@ class ProductoViewModel(): ViewModel() {
     fun obtenerComputacion(): List<ComputacionModel> {
 
         val prod_1 = ComputacionModel(
+            id_cat = 3,
             nombre = "MacBook Air M1",
             envio = true,
             descuento = 0.05f,
@@ -112,6 +123,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_2 = ComputacionModel(
+            id_cat = 3,
             nombre = "MacBook Air M1",
             envio = true,
             descuento = null,
@@ -119,6 +131,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_3 = ComputacionModel(
+            id_cat = 3,
             nombre = "MacBook Air M1",
             envio = true,
             descuento = 0.50f,
@@ -126,6 +139,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_4 = ComputacionModel(
+            id_cat = 3,
             nombre = "MacBook Air M1",
             envio = true,
             descuento = null,
@@ -133,6 +147,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_5 = ComputacionModel(
+            id_cat = 3,
             nombre = "MacBook Air M1",
             envio = true,
             descuento = 15.0f,
@@ -151,6 +166,7 @@ class ProductoViewModel(): ViewModel() {
     fun obtenerInstrumentos(): List<InstrumentosModel> {
 
         val prod_1 = InstrumentosModel(
+            id_cat = 4,
             nombre = "Guitarra acústica",
             envio = true,
             descuento = 0.05f,
@@ -158,6 +174,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_2 = InstrumentosModel(
+            id_cat = 4,
             nombre = "Guitarra acústica",
             envio = true,
             descuento = null,
@@ -165,6 +182,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_3 = InstrumentosModel(
+            id_cat = 4,
             nombre = "Guitarra acústica",
             envio = true,
             descuento = 0.50f,
@@ -172,6 +190,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_4 = InstrumentosModel(
+            id_cat = 4,
             nombre = "Guitarra acústica",
             envio = true,
             descuento = null,
@@ -179,6 +198,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_5 = InstrumentosModel(
+            id_cat = 4,
             nombre = "Guitarra acústica",
             envio = true,
             descuento = 15.0f,
@@ -197,6 +217,7 @@ class ProductoViewModel(): ViewModel() {
     fun obtenerTelefonia(): List<TelefoniaModel> {
 
         val prod_1 = TelefoniaModel(
+            id_cat = 5,
             nombre = "Iphone 16 Pro Max",
             envio = true,
             descuento = 0.05f,
@@ -204,6 +225,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_2 = TelefoniaModel(
+            id_cat = 5,
             nombre = "Iphone 16 Pro Max",
             envio = true,
             descuento = null,
@@ -211,6 +233,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_3 = TelefoniaModel(
+            id_cat = 5,
             nombre = "Iphone 16 Pro Max",
             envio = true,
             descuento = 0.50f,
@@ -218,6 +241,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_4 = TelefoniaModel(
+            id_cat = 5,
             nombre = "Iphone 16 Pro Max",
             envio = true,
             descuento = null,
@@ -225,6 +249,7 @@ class ProductoViewModel(): ViewModel() {
             precio = 799.0f
         )
         val prod_5 = TelefoniaModel(
+            id_cat = 5,
             nombre = "Iphone 16 Pro Max",
             envio = true,
             descuento = 15.0f,

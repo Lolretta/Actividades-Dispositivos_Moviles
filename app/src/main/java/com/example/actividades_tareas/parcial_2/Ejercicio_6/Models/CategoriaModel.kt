@@ -4,6 +4,8 @@ import androidx.annotation.DrawableRes
 
 data class CategoriaModel(
 
+    val id_cat: Int,
+
     @DrawableRes val image: Int,
     val nombre: String
 

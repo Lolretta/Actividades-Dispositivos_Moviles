@@ -5,14 +5,18 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.Button
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.example.actividades_tareas.parcial_2.Ejercicio_6.ViewsModels.ProductoViewModel
 
-
 @Composable
-fun ListVideojuegosView() {
+fun ListVideojuegosView(navegar: NavController) {
 
     val videojuegosViewModel: ProductoViewModel = ProductoViewModel()
 
@@ -22,11 +26,12 @@ fun ListVideojuegosView() {
                 VideojuegoView(product)
             }
         }
+        Button(onClick = {navegar.popBackStack()}, modifier = Modifier.padding(5.dp)) { Text("Regresar")}
     }
 }
 
 @Composable
-fun ListAudioView() {
+fun ListAudioView(navegar: NavController) {
 
     val audioViewModel: ProductoViewModel = ProductoViewModel()
 
@@ -36,11 +41,12 @@ fun ListAudioView() {
                 AudioView(product)
             }
         }
+        Button(onClick = {navegar.popBackStack()}, modifier = Modifier.padding(5.dp)) { Text("Regresar")}
     }
 }
 
 @Composable
-fun ListTelefoniaView() {
+fun ListTelefoniaView(navegar: NavController) {
 
     val telefoniaViewModel: ProductoViewModel = ProductoViewModel()
 
@@ -50,11 +56,12 @@ fun ListTelefoniaView() {
                 TelefonoView(product)
             }
         }
+        Button(onClick = {navegar.popBackStack()}, modifier = Modifier.padding(5.dp)) { Text("Regresar")}
     }
 }
 
 @Composable
-fun ListInstrumentosView() {
+fun ListInstrumentosView(navegar: NavController) {
 
     val instrumentosViewModel: ProductoViewModel = ProductoViewModel()
 
@@ -64,11 +71,12 @@ fun ListInstrumentosView() {
                 InstrumentoView(product)
             }
         }
+        Button(onClick = {navegar.popBackStack()}, modifier = Modifier.padding(5.dp)) { Text("Regresar")}
     }
 }
 
 @Composable
-fun ListComputacionView() {
+fun ListComputacionView(navegar: NavController) {
 
     val computacionViewModel: ProductoViewModel = ProductoViewModel()
 
@@ -78,27 +86,27 @@ fun ListComputacionView() {
                 ComputacionView(product)
             }
         }
+        Button(onClick = {navegar.popBackStack()}, modifier = Modifier.padding(5.dp)) { Text("Regresar")}
     }
 }
 
 @Composable
-fun ProductoView (nombre: String) {
+fun ProductosView (id: Int, navegar: NavController) {
 
-    if (nombre == "Videojuegos") {
-        ListVideojuegosView()
+    if (id == 1) {
+        ListVideojuegosView(navegar)
     }
-    if (nombre == "Audio") {
-        ListAudioView()
+    if (id == 2) {
+        ListAudioView(navegar)
     }
-    if (nombre == "Computacion") {
-        ListComputacionView()
+    if (id == 3) {
+        ListComputacionView(navegar)
     }
-    if (nombre == "Instrumentos") {
-        ListInstrumentosView()
+    if (id == 5) {
+        ListInstrumentosView(navegar)
     }
-    if (nombre == "Telefonia") {
-        ListTelefoniaView()
+    if (id == 4) {
+        ListTelefoniaView(navegar)
     }
-
 
 }

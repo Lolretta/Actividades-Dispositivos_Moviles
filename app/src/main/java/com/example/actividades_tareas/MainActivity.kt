@@ -11,7 +11,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.actividades_tareas.parcial_2.Ejercicio_6.NavigationManager_Ejercicio6
-import com.example.actividades_tareas.parcial_2.Tarea_4.NavigationManager_Tarea4
 import com.example.actividades_tareas.ui.theme.Actividades_TareasTheme
 
 class MainActivity : ComponentActivity() {

@@ -8,11 +8,10 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.actividades_tareas.parcial_2.Ejercicio_6.Views.ListCategoriasViews
-import com.example.actividades_tareas.parcial_2.Ejercicio_6.Views.ProductoView
+import com.example.actividades_tareas.parcial_2.Ejercicio_6.Views.ProductosView
 
 @Preview(showBackground = true)
 @Composable
-
 fun NavigationManager_Ejercicio6() {
 
     val navController = rememberNavController()
@@ -22,18 +21,17 @@ fun NavigationManager_Ejercicio6() {
             ListCategoriasViews(navController)
         }
 
-        composable(route = "producto?nombre={nombre}",
+        composable(route = "productos?id={id}",
             arguments = listOf(
-                navArgument("nombre") {
-                    type = NavType.StringType
-                    nullable = true
-                    defaultValue = "-"
+                navArgument("id") {
+                    type = NavType.IntType
+                    defaultValue = 0
                 }
             )
         ) {
-                parametros ->
-            val name = parametros.arguments?.getString("nombre") ?: "*"
-            ProductoView(name)
+            parametros ->
+            val id = parametros.arguments?.getInt("id") ?: 0
+            ProductosView(id, navController)
         }
 
     }
